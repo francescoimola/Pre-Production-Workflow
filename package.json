@@ -1,0 +1,19 @@
+{
+  "name": "pre-production_flowchart",
+  "version": "1.0.0",
+  "description": "Pre-Production Workflow for Film and TV staff and students at the University of Greenwich",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francescoimola/Pre-Production-Workflow.git"
+  },
+  "author": "Francesco Imola, University of Greenwich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francescoimola/Pre-Production-Workflow/issues"
+  },
+  "homepage": "https://github.com/francescoimola/Pre-Production-Workflow#readme"
+}
