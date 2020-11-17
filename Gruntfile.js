@@ -10,7 +10,7 @@ module.exports = function(grunt) {
               style: 'expanded',
             },
             files: {
-              'css/style.css' : 'sass/style.scss'
+              'stylesheets/style.css' : 'sass/style.scss'
             }
           },
         },
