@@ -11,7 +11,7 @@
     rel="stylesheet">
   <!--   <link rel="stylesheet" href="styles.css"> -->
   <style type="text/css">
-    @import url(styles.css);
+    @import url(./css/style.css);
   </style>
 
 </head>
@@ -20,25 +20,42 @@
   <div class="text">
     <h1 style="animation-delay: .1s;">PRE-PRODUCTION WORKFLOW</h1>
     <p style="animation-delay: 0.2s;">In order to film in any of the University of Greenwich campuses you need to:</p>
-    <p style="animation-delay: 0.3s;">•Agree on a location, time and date for filming.&nbsp;• Consider equipment
-      required and filming process&nbsp;• Submit RAMS for approval by your Course Tutor.</p>
+    <p style="animation-delay: 0.3s;" class="small">• Agree on a location, time and date for filming.<br>• Consider
+      equipment
+      required and filming process.<br>• Submit RAMS for approval by your Course Tutor.</p>
     <p style="animation-delay: 0.4s;">For your RAMS to be approved, you need to follow this checklist:</p>
-    <p style="animation-delay: 0.5s;" class="small">Are you filming in Faculty Areas or offsite?&nbsp;</p>
-    <p style="animation-delay: 0.6s;">YES -&gt;&nbsp;Obtain approval from Faculty or site owner<br />
+    <!-- QUESTION 1 -->
+    <p style="animation-delay: 0.5s;" class="small">• Are you filming in Faculty Areas or
+      offsite?<br>
+
+      <span onclick="clickYES1()" class="underline" id="yes1">yes</span> /
+      <span onclick="clickNO1()" class="underline" id="no1">no</span>
     </p>
-    <p style="animation-delay: 0.7s;">Are you filming in the UoG general areas (corridors, lobby, lift,
-      etc.)?&nbsp;&nbsp;</p>
-    <p style="animation-delay: 0.8s;">YES -&gt; Submit to fmhelpdesk@gre.ac.uk for secondary approval specifying details
-      (e.g. room number, fire route, power and lighting requirements,&nbsp; date &amp; hours of filming).</p>
-    <p style="animation-delay: 0.9s;">Are you filming in Greenwich Foundation Areas?</p>
-    <p style="animation-delay: 1s;">YES -&gt; Please contact the Greenwich Foundation to submit a request on
-      facilities@ornc.org specifying details (e.g. location, fire route, power and lighting requirements, date &amp;
-      hours of filming).<br />
+
+    <!-- QUESTION 2 -->
+    <p style="animation-delay: 0.6s;" class="small">• Are you filming in the UoG general areas (corridors, lobby, lift,
+      etc.)?<br>
+
+      <span onclick="clickYES2()" class="underline" id="yes2">yes</span> /
+      <span onclick="clickNO2()" class="underline" id="no2">no</span>
     </p>
-    <p style="animation-delay: 1.1s;">NO -&gt; Approval Obtained. Start Filming!</p>
+
+    <!-- QUESTION 3 -->
+    <p style="animation-delay: 0.7s;" class="small">• Are you filming in Greenwich Foundation Areas?<br>
+
+      <span onclick="clickYES3()" class="underline" id="yes3">yes</span> /
+      <span onclick="clickNO3()" class="underline" id="no3">no</span>
+    </p>
+
   </div>
 
   <script type="text/javascript" src="script.js"></script>
+  <style>
+    .watermark{
+      font-size: 0;
+    }
+    
+  </style>
 </body>
 
 </html>
