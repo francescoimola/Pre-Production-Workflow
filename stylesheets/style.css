@@ -1,51 +1,57 @@
-/* line 6, ../sass/style.scss */
+html {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 100%;
   font-weight: inherit;
 }
 
-/* line 14, ../sass/style.scss */
 body {
   background: #1a3e8b;
   color: #ffae2b;
   width: 100%;
 }
 
-/* PAGE */
-/* line 23, ../sass/style.scss */
+/* PAGE ELEMENTS */
 .text {
   font-family: "IBM Plex Sans", sans-serif;
   display: none;
-  font-size: 4vw;
-  line-height: 4vw;
+  font-size: calc(12px + 1.5vw);
+  line-height: calc(12px + 2vw);
   font-weight: bold;
   font-variant-ligatures: normal;
 }
 
-/* line 33, ../sass/style.scss */
 h1 {
-  font: inherit;
+  line-height: calc(12px + 5vw) !important;
   color: #ffae2b;
   line-height: inherit;
   letter-spacing: inherit;
 }
 
-/* line 40, ../sass/style.scss */
-.text p, h1 {
+.text p,
+h1 {
   opacity: 0;
   animation: fadein .2s forwards ease-out;
-  padding: 1.58vw 10vw 2.37vw 3vw;
+  padding: 1.2vw 3vw 0.5vw 3vw;
 }
 
-/* line 46, ../sass/style.scss */
 .text p {
   color: white;
+  margin-top: 0vw;
+  margin-bottom: 0vw;
 }
 
-/* line 50, ../sass/style.scss */
 .text a {
   text-decoration: underline;
   text-decoration-skip: ink;
@@ -57,25 +63,21 @@ h1 {
   cursor: pointer;
 }
 
-/* line 61, ../sass/style.scss */
 .text a:hover {
   text-decoration: none;
 }
 
-/* line 65, ../sass/style.scss */
 .text a:focus {
   text-decoration: none;
   outline: solid 4px rgba(0, 0, 0, 0.4);
 }
 
-/* line 70, ../sass/style.scss */
 .small {
   color: #ffae2b !important;
-  font-size: 2vw;
-  line-height: 2.66667vw;
+  font-size: calc(12px + 1.5vw)/2;
+  line-height: calc(12px + 1.5vw)/1.5;
 }
 
-/* line 76, ../sass/style.scss */
 .underline {
   cursor: pointer;
   text-decoration: underline;
@@ -84,7 +86,6 @@ h1 {
   text-decoration-skip-ink: auto;
 }
 
-/* line 84, ../sass/style.scss */
 ::selection {
   background: #000;
   background: rgba(0, 0, 0, 0.99);
@@ -101,3 +102,5 @@ h1 {
     margin-top: 0;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

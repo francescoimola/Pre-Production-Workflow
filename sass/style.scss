@@ -1,13 +1,26 @@
-$yellow:  #ffae2b;
-$blue:  #1a3e8b;
+$yellow: #ffae2b;
+$blue: #1a3e8b;
+$text-size: calc(12px + 1.5vw);
+$line: calc(12px + 2vw);
 
+// Hide scrollbar for IE, Edge and Firefox 
+html {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
 
+// Hide scrollbar for Chrome, Safari and Opera 
+html::-webkit-scrollbar {
+    display: none;
+}
 
+//PAGE-WIDE CSS
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 100%;
     font-weight: inherit;
 }
 
@@ -17,34 +30,36 @@ body {
     width: 100%;
 }
 
-/* PAGE */
-$text-size: 4vw;
+
+/* PAGE ELEMENTS */
 
 .text {
     font-family: "IBM Plex Sans", sans-serif;
     display: none;
-
     font-size: $text-size;
-    line-height: $text-size;
+    line-height: $line;
     font-weight: bold;
     font-variant-ligatures: normal;
 }
 
 h1 {
-    font: inherit;
+    line-height: calc(12px + 5vw) !important;
     color: $yellow;
     line-height: inherit;
     letter-spacing: inherit;
 }
 
-.text p, h1 {
+.text p,
+h1 {
     opacity: 0;
     animation: fadein .2s forwards ease-out;
-    padding: 1.58vw 10vw 2.37vw 3vw;
+    padding: 1.2vw 3vw 0.5vw 3vw;
 }
 
 .text p {
     color: white;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
 }
 
 .text a {
@@ -71,6 +86,7 @@ h1 {
     color: $yellow !important;
     font-size: $text-size / 2;
     line-height: $text-size / 1.5;
+
 }
 
 .underline {
