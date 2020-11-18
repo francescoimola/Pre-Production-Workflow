@@ -26,7 +26,6 @@ html::-webkit-scrollbar {
 
 body {
     background: $blue;
-    color: $yellow;
     width: 100%;
 }
 
@@ -115,4 +114,14 @@ h1 {
         opacity: 1;
         margin-top: 0;
     }
+}
+
+// Activate text on click
+
+.modified {
+    cursor: pointer;
+    font-size: inherit;
+    line-height: inherit;
+    color: white;
+    text-decoration: none;
 }
