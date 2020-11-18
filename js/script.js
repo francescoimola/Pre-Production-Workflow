@@ -75,7 +75,7 @@ function clickYES3() {
 //// NO FUNCTIONS
 function clickNO1() {
     if (n1.innerHTML === "no" && document.getElementById("no1").className.match(/(?:^|\s)underline(?!\S)/)) {
-        n1.innerHTML = "Awesome! Your Risk Assessment is approved and you can start filming.";
+        n1.innerHTML = "Understood. Move to the next question.";
         document.getElementById("no1").setAttribute("class", "modified");
         y1.innerHTML = "";
     } else {
@@ -87,7 +87,7 @@ function clickNO1() {
 
 function clickNO2() {
     if (n2.innerHTML === "no" && document.getElementById("no2").className.match(/(?:^|\s)underline(?!\S)/)) {
-        n2.innerHTML = "Awesome! Your Risk Assessment is approved and you can start filming.";
+        n2.innerHTML = "Sounds good. Move to the next question.";
         document.getElementById("no2").setAttribute("class", "modified");
         y2.innerHTML = "";
     } else {
